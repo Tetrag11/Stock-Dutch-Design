@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  
+
+   <style>
+        /* slideshow */
+    .swiper-pagination-bullet-active {
+      background-color: white;
+    }
+   </style>
+
+    
+    <script>
+        // initialize marquee function
+    document.addEventListener("DOMContentLoaded", function(){
+    var element = document.getElementById("text-roller");
+    var text_roller = new TextRoller(element);
+    text_roller.start();
+    });
+    </script>
+    <script src="text-roller.js"></script>
+    <title>Document</title>
+</head>
+<body id="b"  style="background-color: rgba(181,150,158,255);">
+    <div style="overflow: hidden; max-height: 8600px;">
+        <!-- overlay -->
+        
+        <div class="overlay xs:grid justify-center items-center">
+            <div class="overlay-img"></div>
+            <div class="overlay-content">
+                <a href="javascript:void(0)" onclick="closeNav()" class="block text-7xl mr-5 text-right "><i class="bi bi-x"></i></a>
+                <div class="px-10 xs:px-0 xs:grid justify-start" style="grid-template-columns: auto auto auto;">
+                    <ul class="show link self-center text-vwidth8 xs:text-vwidthsmall5 lg:text-6xl xs:pr-20 row-span-2">
+                        <li class="dropdown my-4 xs:my-0"><a href="#" class="inline-block relative">About<span class="slider"></span></a></li>
+                        <li class="dropdown my-4 xs:my-0"><a href="#" class="inline-block relative">Projects<span class="slider"></span></a></li>
+                        <li class="dropdown my-4 xs:my-0"><a href="#" class="inline-block relative">Lookbook<span class="slider"></span></a></li>
+                        <li class="dropdown my-4 xs:my-0"><a href="#" class="inline-block relative">Journal<span class="slider"></span></a></li>
+                        <li class="dropdown my-4 xs:my-0"><a href="#" class="inline-block relative">Media<span class="slider"></span></a></li>
+                        <li class="dropdown my-4 xs:my-0"><a href="#" class="inline-block relative">Contact<span class="slider"></span></a></li>
+                    </ul>
+                    <ul class=" mt-10 xs:mt-0 text-vwidthsmall xs:text-vwidth2 lg:text-lg xs:pr-10 font-medium">
+                        <li class="dropdown my-1 xs:pb-10">Lookbook</li><br>
+                        <li class="dropdown my-1"><a href="" class="opacity-60 transition hover:opacity-100 ">Embracing & Toasting</a></li>
+                        <li class="dropdown my-1"><a href="" class="opacity-60 transition hover:opacity-100 ">Cooking & Sharing</a></li>
+                        <li class="dropdown my-1"><a href="" class="opacity-60 transition hover:opacity-100 ">Splattering & Dreaming</a></li>
+                        <li class="dropdown my-1"><a href="" class="opacity-60 transition hover:opacity-100 ">Creating & Playing Style</a></li>
+                        <li class="dropdown my-1"><a href="" class="opacity-60 transition hover:opacity-100 ">Stock Originals</a></li>
+                        <li class="dropdown my-1"><i class="bi bi-dash-lg"></i></li>
+                        <li class="dropdown my-1"><a href="" class="opacity-60 transition hover:opacity-100">All Projects</a></li>
+                        <li class="dropdown my-1"><a href="" class="opacity-60 transition hover:opacity-100">Testimonials</a></li>
+                    </ul>
+                    <ul class="mt-10 xs:mt-0 text-vwidthsmall5 xs:text-vwidth2 lg:text-lg xs:pr-10 font-medium">
+                        <li class="dropdown my-2 xs:pb-10 xs:my-1">In The Middle</li><br>
+                        <li class="dropdown my-2 xs:my-1 text-vwidthsmall xs:text-vwidth2 lg:text-lg"><a href="" class="opacity-60 transition hover:opacity-100">Books</a></li>
+                        <li class="dropdown my-2 xs:my-1 text-vwidthsmall xs:text-vwidth2 lg:text-lg"><a href="" class="opacity-60 transition hover:opacity-100">Magazines</a></li>
+                        <li class="dropdown my-2 xs:my-1 text-vwidthsmall xs:text-vwidth2 lg:text-lg"><a href="" class="opacity-60 transition hover:opacity-100">Videos</a></li>
+                    </ul>
+                    <ul class="self-end xs:pb-5 mt-10 flex flex-row justify-between w-3/5 text-vwidth6 xs:text-vwidth2 lg:text-lg">
+                        <li class="dropdown"><a href="#" class="opacity-60 transition hover:opacity-100"><i class="fab fa-instagram"></i></a></li>
+                        <li class="dropdown"><a href="#" class="opacity-60 transition hover:opacity-100"><i class="fab fa-pinterest-p"></i></a></li>
+                        <li class="dropdown"><a href="#" class="opacity-60 transition hover:opacity-100"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="dropdown"><a href="#" class="opacity-60 transition hover:opacity-100"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li class="dropdown"><a href="#" class="opacity-60 transition hover:opacity-100"><i class="fab fa-houzz"></i></a></li>
+                    </ul>
+                    <ul class="self-end xs:pb-5 mt-10 xs:mt-3 text-vwidth5 xs:text-vwidth2 lg:text-lg">
+                        <li class="dropdown my-2"><a href="#">English</a></li>
+                        <li class="dropdown my-2"><a href="#" class="opacity-60">Nederlands</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="first" class="container xs:max-w-full sm:max-w-screen-sm lg:max-w-screen-xl mx-auto relative top-10">
+            <div class="flex flex-row justify-between px-4 sm:px-0">
+                <span class="text-white" style="font-size: 3.45vw;"><pre> S T O C K</pre></span>
+                <ul class="link flex flex-row self-start text-white" style="font-family: 'Source Sans Pro';">
+                    <li class="hidden xs:inline-block px-3 lg:px-5 font-bold"><a href="#" style="font-size: 0.9vw; letter-spacing: 0.27vw;"  class="inline-block relative">ABOUT<span class="slider" style="height: 4px;"></span></a></li>
+                    <li class="hidden xs:inline-block px-3 lg:px-5 font-bold"><a href="#" style="font-size: 0.9vw; letter-spacing: 0.27vw;" class="inline-block relative">PROJECTS<span class="slider" style="height: 4px;"></span></a></li>
+                    <li class="hidden xs:inline-block px-3 lg:px-5 font-bold"><a href="#" style="font-size: 0.9vw; letter-spacing: 0.27vw;" class="inline-block relative">LOOKBOOK<span class="slider" style="height: 4px;"></span></a></li>
+                    <li class="hidden xs:inline-block px-3 lg:px-5 font-bold"><a href="#" style="font-size: 0.9vw; letter-spacing: 0.27vw;" class="inline-block relative">JOURNAL<span class="slider" style="height: 4px;"></span></a></li>
+                    <li class="hidden xs:inline-block px-3 lg:px-5 font-bold"><a href="#" style="font-size: 0.9vw; letter-spacing: 0.27vw;" class="inline-block relative">MEDIA<span class="slider" style="height: 4px;"></span></a></li>
+                    <li class="hidden xs:inline-block px-3 lg:px-5 font-bold"><a href="#" style="font-size: 0.9vw; letter-spacing: 0.27vw;" class="inline-block relative">CONTACT<span class="slider" style="height: 4px;"></span></a></li>
+                    <li class="px-3 lg:px-5 font-bold text-vwidthsmall5 xs:text-sm  lg:text-lg"><a class="burger" href="javascript:void(0)" onclick="openNav()"><i class="fas fa-bars"></a></i></li>
+                </ul>
+            </div>
+        </div>
+        <!-- starting main after the nav bar. -->
+        <div class="main-parent relative top-28 w-full" style="height: 700px;">
+            <!-- image section mobile -->
+            <div class="img-mobile relative xs:hidden">
+                <div class="absolute" style="width: 42vw; left: 34vw;"><img src="img/hpr1-b.webp" alt=""></div>
+                <div class="absolute" style="width: 32vw; top: 15vh; left: 55vw;"><img src="img/hppersonf.webp" alt=""></div>
+                <div class="absolute" style="width: 32vw;top: 20vh; left: 13vw; "><img src="img/hpperson.webp" alt=""></div>
+                <div class="absolute w-full text-white leading-tight items-center" style="top: 20vh;">
+                    <div class="flex flex-col items-center" style="font-size: 11vw; font-family: 'Noto Serif', serif;">
+                        <p>Making</p>
+                        <p>Enchanting</p>
+                        <p>Memories</p>
+        
+                    </div>
+                    <div class="flex mt-3 flex-col items-center leading-normal font-bold" style="font-size: 4vw;">
+                        <p><pre>L E O N I E  H E N D R I K S E  &</pre></p>
+                        <p><pre>J E R O N  S T O C K</pre></p>
+                    </div>
+                </div>
+        
+            </div>
+            <!-- image section other-->
+            <div id="ex1" class="img-other relative hidden xs:block" style="height: 100%;">
+                <div class="left absolute w-1/2" style="height: 100%;" onmouseover="leftProp()">
+                    <div id="ex1-layer-1" class="team-1 absolute z-10" style="width: 23vw; left: 12vw;"><img src="img/hpr1-b.webp" id="img1" alt=""><img src="img/hpr1-a.webp" id="img2" alt=""></div>
+                    <div id="ex1-layer-2" class="team-1 absolute z-20" style="width: 15vw; top: 25vh; left: 5vw;"><img src="img/hpperson.webp" alt=""></div>
+                    <div id="ex1-layer-3" class="team-1 absolute z-30" style="width: 12vw; top: 44vh; left: 17vw;"><img src="img/hpr2-a.webp" id="img1" class="difh" style="height: 16vw; object-fit: cover; object-position: 50% 50%;" alt=""><img src="img/hprlamp.jpg" id="img2" class="difh" style="height: 16vw; object-fit: cover; object-position: 50% 50%;" alt=""></div>
+                </div>
+                <div class="right absolute w-1/2 left-1/2" style="height: 100%;" onmouseover="rightProp()">
+                    <div id="ex1-layer-4" class="team-2 absolute z-10" style="width: 17vw; left: 12vw;"><img src="img/hpr3-b.webp" id="img1" alt=""><img src="img/hpr3-a.webp" id="img2" alt=""></div>
+                    <div id="ex1-layer-5" class="team-2 absolute z-30" style="width: 15vw; top: 20vh; left: 22vw;"><img src="img/hppersonf.webp" alt=""></div>
+                    <div id="ex1-layer-6" class="team-2 absolute z-20" style="width: 12vw; top: 42vh; left: 17vw;"><img src="img/hpr4-b.webp" id="img1" class="difh" style="height: 16vw; object-fit: cover; object-position: 50% 50%;" alt=""><img src="img/hpr4-a.jpg" id="img2" class="difh" style="height: 16vw;" alt=""></div>
+                    <div id="ex1-layer-7" class="team-2 absolute z-40 text-white" style="top: 15vw; left: -20vw;"><img src="img/circle.png " style="width: 28vw; opacity: 0.5;" alt=""></div>
+                </div>
+                <div class="wrapper">
+                    <div class="box-3" id="boxdum"></div>
+                </div>
+                <div class="absolute z-50 text-white leading-tight items-center" style="top: 5vh; left: 33vw;">
+                    <div class="flex flex-col font-medium tracking-tighter" style="font-size: 7vw; font-family: 'Noto Serif', serif;">
+                        <p>Making</p>
+                        <p>Enchanting</p>
+                        <p>Memories</p>
+        
+                    </div>
+                    <div class="flex mt-3 flex-col tracking-wider  leading-normal font-thin" style="font-size: 1vw;">
+                        <p><pre class="pl-2">L E O N I E  H E N D R I K S E</pre></p>
+                        <p><pre class="pl-2">& J E R O N  S T O C K</pre></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- second section -->
+        <!-- logo -->
+        <div class="relative " style="height: 600px;">
+            <div class="w-full absolute" >
+                    <!--mobile logo/text/about -->
+                    <div class="xs:hidden" style="margin-left: 39%;" >
+                        <div class="relative">
+                            <img class="logo-slower transition-all absolute animate-spin-slower" src="img/badge-logo.svg"  style="width: 25vw; height: 25vw;" alt="">
+                            <img class="logo-slow transition-all absolute animate-spin-slow" src="img/badge-circle.svg" style="width: 25vw; height: 25vw;" alt="">
+                        </div>
+                    </div>
+                    <div class="xs:hidden relative flex flex-col justify-center items-center text-white" style="top:40vw; font-size: 4.86vw; line-height: 8.53vw; letter-spacing: 0.13vw; font-family: 'Noto Serif', serif;">
+                            <p>"We believe true design is about </p>
+                            <p>understanding our client's</p>
+                            <p>lifestyle"</p>
+                    </div>
+                    <div class="relative xs:hidden flex justify-center" style="top: 50vw;">
+                            <a href="#" class="text-white inline-block border border-white px-5 mb-7" style="font-size: 5.33vw; line-height: 13.33vw; font-family: 'Noto Serif', serif"> About us </a>
+                    </div>
+                    <!-- other-logo -->
+                    <div class="relative hidden mt-64 xs:block" style="top: -20vw; margin-left: 80%;">
+                        <img class="logo-slower transition-all absolute animate-spin-slower" src="img/badge-logo.svg"  style="width: 8.33vw; height: 25vw;" alt="">
+                        <img class="logo-slow transition-all absolute animate-spin-slow" src="img/badge-circle.svg" style="width: 8.33vw; height: 25vw;" alt="">
+                    </div>
+                    <div class="relative hidden xs:flex flex-col justify-center items-center text-white" style="top:0vw; font-size: 2.77vw; line-height: 3.47vw; letter-spacing: 0.06vw; font-family: 'Noto Serif', serif;">
+                        <p>"We believe true design is about </p>
+                        <p>understanding our client's</p>
+                        <p>lifestyle"</p>
+                    </div>
+                    <div class="relative hidden xs:flex justify-center" style="top: 5vw;">
+                        <a href="#" class="text-white inline-block border border-white px-5 mb-7" style="font-size: 1.52vw; line-height: 3.81vw; letter-spacing: 0.5px; font-family: 'Noto Serif', serif"> About us </a>
+                </div>
+        
+        
+            </div>
+        </div>
+        <!-- section with marquee(sort of... XD) -->
+        <div class="relative w-full overflow-visible" style="max-width: 100vw; overflow-x: hidden;">
+            <!-- mobile and other -->
+            <div id="vertical-move-parent" class="relative overflow-hidden">
+                <!-- marquee(includes other too) -->
+                <div id="text-roller" style="font-family: 'Noto Serif', serif ; z-index: -1;">
+                    <span class="marquee text-white">— Architecture and Design Review — Architecture and Design Review — Architecture and Design Review — Architecture and Design Review </span>
+                </div><br class="xs:hidden"><br class="xs:hidden"><br class="xs:hidden">
+                <!-- image -->
+                <div class="xs:hidden " style="width: 66.7vw; margin: auto; ">
+                    <img src="img/book.webp" alt="">
+                </div><br class="xs:hidden">
+                <!-- text -->
+                <div class="xs:hidden mx-auto text-white" style="width: 66.7vw;">
+                    <h3 class="font-semibold" style="font-size: 3.2vw; line-height: 3.2vw; letter-spacing: 0.93vw;">News</h3>
+                    <br>
+                    <p class="opacity-60" style="font-size: 4vw; line-height: 6.93vw; letter-spacing: 0.03vw;">This book is an inspiring reference work created by us together with colleagues from leading design firms at home and abroad. Professionals from various disciplines in interior design &amp; construction are proud to share their work with you.</p>
+                     <br>
+                    <a href="#" class="text-white inline-block border border-white border-opacity-60 px-5 mb-7" style="font-size: 5.33vw; line-height: 13.33vw; letter-spacing: 0.5px; font-family: 'Noto Serif', serif"> About us </a>
+                </div>
+                <!-- other image -->
+                <div id="verticalmove" class="hidden xs:block  overflow-visible  " style="width: 25vw; margin-left: 10vw;">
+                    <img src="img/book.webp" alt="">
+                </div>
+                <!--other text  -->
+                <div class="hidden xs:block text-white" style="width: 25vw; margin-left: 50vw; margin-top: -17vw;">
+                    <h3 class="font-semibold mb-2" style="font-size: 0.97vw; line-height: 0.97vw; letter-spacing: 0.31vw;">News</h3>
+                    <p class="opacity-60 mb-2" style="font-size: 1.04vw; line-height: 2.08vw; letter-spacing: 0.03vw;">This book is an inspiring reference work created by us together with colleagues from leading design firms at home and abroad. Professionals from various disciplines in interior design &amp; construction are proud to share their work with you.</p>
+        
+                    <a href="#" class="text-white inline-block border border-white border-opacity-60 px-3 " style="font-size: 1.52vw; line-height: 3.81vw; letter-spacing: 0.5px; font-family: 'Noto Serif', serif"> Read more </a>
+                </div>
+        
+            </div>
+        
+        </div>
+        <!-- The three part img -->
+        <div class="Three my-40 mb-0">
+            <div class="corehide hidden xs:block absolute text-white" style="z-index: 3; left: 8.33%; font-size: 1.66vw; letter-spacing: 0.02vw; font-family: 'Noto Serif', serif; opacity: 1; transition: opacity 0.4s;">
+                <p>001 - Our Core Values</p>
+            </div>
+            <div class="parent-1" >
+                <div class="back-img-1"></div>
+                <div class="back-color-1"></div>
+                <div class="wrap" style="overflow-y: hidden;">
+                        <div class="heading-1">
+                            <span class="xs:hidden" style=" font-size: 4.8vw; letter-spacing: 0.26vw; opacity: 0.8;">01</span><br><br>
+                            <span class="hidden xs:block" style="padding-top: 10px; font-size: 1.66vw; letter-spacing: 0.06vw; line-height: 1.38vw; opacity: 0.8;">01</span><br><br>
+                            Future <br> Proof <br> Design <br> <br>
+                            <p >One of our signatures is that each design is future proof. This means that we start the process with a thorough understanding of the lifestyle of the residents and translate it into a practical &amp; durable design that will be enjoyed throughout the years.</p>
+                        </div>
+        
+        
+                </div>
+        
+            </div>
+            <div class="parent-2">
+                <div class="back-img-2"></div>
+                <div class="back-color-2"></div>
+                <div class="wrap" >
+                    <div class="heading-2">
+                        <span class="xs:hidden" style=" font-size: 4.8vw; letter-spacing: 0.26vw; opacity: 0.8;">02</span><br><br><br>
+                        <span class="hidden xs:block" style="padding-bottom: 20px; font-size: 1.66vw; letter-spacing: 0.06vw; line-height: 1.38vw; opacity: 0.8;">02</span><br><br>
+                        Embracing <br> Heritage <br> <br>
+                        <p >Grandma’s chair re-upholstered in a fabulous fabric, prints that bring back memories of a trip of a life time, wall-paper that gives that old piece of art new appreciation. Family stories and precious heirlooms are always incorporated in a Stock design.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="parent-3">
+                <div class="back-img-3"></div>
+                <div class="back-color-3"></div>
+                <div class="wrap">
+                    <div class="heading-3">
+                        <span class="xs:hidden" style="font-size: 4.8vw; letter-spacing: 0.26vw; opacity: 0.8;">03</span><br><br>
+                        <span class="hidden xs:block" style=" font-size: 1.66vw; letter-spacing: 0.06vw; line-height: 1.38vw; opacity: 0.8;">03</span><br><br>
+                        Dashing <br> Colors <br> & patterns <br> <br><br class="useless">
+                        <p >We are all about dashing colors & patterns and combining them in elegant & fabulous ways. Each Stock room has a delightful and characteristic atmosphere.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- whitebackground -->
+        
+        <div class="whitebackground bg-white relative h-full w-full transition-colors duration-500" style="font-family: 'Noto Serif', serif;">
+            <!-- mobile -->
+            <div class="xs:hidden" style="padding: 26.66vw 0;">
+                <div class="ml-10">
+                    <p class="tracking-tight" style="font-size: 5.33vw; letter-spacing: 0.02vw;"><span class="opacity-40">002</span> - Lookbook</p>
+                </div>
+                <div class="w-full tracking-tighter opacity-90 flex flex-col flex-wrap justify-center items-center" style="color: #202020; font-size: 9vw; line-height: 14vw;margin-block-start: 0.83em; margin-block-end: 0.83em; margin-inline-start: 0px; margin-inline-end: 0px;">
+                    <p class="inline"><a href="">Embracing & Toasting</a></p>
+                    <p class="inline"><a href="">Cooking & Sharing</a></p>
+                    <p class="inline text-center"><a href="">Splattering & Dreaming</a></p>
+                    <p class="inline"><a href="">Creating & Playing</a></p>
+                    <p class="inline"><a href="">Stock Originals</a></p>
+                </div>
+                <br><br>
+                <div class=" block text-center">
+                    <a href="#" class=" inline-block border border-black px-5 mb-7" style="color: #202020; font-size: 5.33vw; line-height: 13.33vw;"> Veiw all work </a>
+                </div>
+            </div>
+            <!-- other -->
+            <div class="hidden xs:block" style=" padding-bottom: 10vw; padding-top: 10vw; ">
+                <div class="lookbook ml-10 transition-colors duration-500">
+                    <p class="tracking-tight" style="font-size: 1.66vw; letter-spacing: 0.02vw;"><span class="opacity-40">002</span> - Lookbook</p>
+                </div>
+                <div class="lookbook-content w-full tracking-tighter opacity-90 flex flex-col flex-wrap justify-center items-center" style="color: #202020; font-size: 6.63vw;margin-block-start: 0.83em; margin-block-end: 0.83em; margin-inline-start: 0px; margin-inline-end: 0px;">
+                    <p onmouseover="l1mouseover()" onmouseout="l1mouseout()" class="l-1 relative inline"><a class=" hover:text-white transition-colors duration-500" href="">Embracing & Toasting</a></p>
+                    <p onmouseover="l2mouseover()" onmouseout="l2mouseout()" class="l-2 relative inline"><a class=" hover:text-white transition-colors duration-500" href="">Cooking & Sharing</a></p>
+                    <p onmouseover="l3mouseover()" onmouseout="l3mouseout()" class="l-3 relative inline text-center"><a class=" hover:text-white transition-colors duration-500" href="">Splattering & Dreaming</a></p>
+                    <p onmouseover="l4mouseover()" onmouseout="l4mouseout()" class="l-4  relative inline"><a class=" hover:text-white transition-colors duration-500" href="">Creating & Playing</a></p>
+                    <p onmouseover="l5mouseover()" onmouseout="l5mouseout()" class="l-5 relative inline"><a class=" hover:text-white transition-colors duration-500" href="">Stock Originals</a></p>
+                    <div class="white-vert-1 absolute" style="z-index: -1; opacity: 0; width: 30vw; top: 35vw; left: 25vw;"><img class="white-img-1" src="img/white1-a.webp" alt=""></div>
+                    <div class="white-vert-2 absolute " style="z-index: -1; opacity: 0; width: 20vw; top: 45vw; left: 57vw;"><img class="white-img-2" src="img/white1-b.webp" alt=""></div>
+                </div>
+                <br>
+                <div class=" block text-center">
+                    <a href="#" class=" inline-block border border-black px-5 mb-7" style="color: #202020; font-size:1.52vw; line-height: 3.81vw; letter-spacing: 0.5px;"> Veiw all work </a>
+                </div>
+            </div>
+        
+        </div>
+        <!-- slideshow using swiper js -->
+        <!-- mobile -->
+        <div class="swiper xs:hidden" style="height: 100vh;">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                  <div class="relative w-full h-full">
+                      <img class="absolute" src="img/slideshow1.webp" alt="" style="width: 100%; height: 100%; filter:grayscale(20%) brightness(60%)">
+                      <div class="absolute text-white h-full w-full"  style="top: 30%;">
+                          <p class="text-left px-7 font-extralight tracking-tighter " style="font-size: 6.66vw; line-height: 9.33vw; margin-bottom: 1.38vw;  font-family: 'Noto Serif', serif;">"A positive sparring partner, consultation without trying to box us, and old fashioned service where the customer is king.”</p>
+                          <p class="px-7 pt-3 tracking-wide font-semibold" style="font-family: 'Noto Serif', serif; margin-bottom: 6.66vw; font-size: 4.26vw; line-height: 6.93vw;"><span>Mr. P.C. van Lede &amp; Mrs. M. Bührmann – Smidt van Gelder —</span> Bloemendaal</p>
+                          <span class="block px-7"><a href="#" class="text-white inline-block border border-white border-opacity-60 px-3 " style="font-size: 5.33vw; line-height: 13.33vw; letter-spacing: 0.5px; font-family: 'Noto Serif', serif"> Read Testimonial </a></span>
+                      </div>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <div class="relative w-full h-full">
+                      <img class="absolute" src="img/slideshow-2.webp" alt="" style="width: 100%; height: 100%; filter:grayscale(20%) brightness(60%)">
+                      <div class="absolute text-white" style="top: 30%;">
+                        <p class="text-left px-7 font-extralight tracking-tighter " style="font-size: 6.66vw; line-height: 9.33vw; margin-bottom: 1.38vw;  font-family: 'Noto Serif', serif;">"Without Stock Interiors we would have been lost.”</p>
+                        <p class="px-7 pt-3 tracking-wide font-semibold" style="font-family: 'Noto Serif', serif; margin-bottom: 6.66vw; font-size: 4.26vw; line-height: 6.93vw;"><span>Marry de Gaay Fortman —</span>  Amsterdam</p>
+                        <span class="block px-7"><a href="#" class="text-white inline-block border border-white border-opacity-60 px-3 " style="font-size: 5.33vw; line-height: 13.33vw; letter-spacing: 0.5px; font-family: 'Noto Serif', serif"> Read Testimonial </a></span>
+                      </div>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <div class="relative w-full h-full">
+                      <img class="absolute" src="img/slideshow-3.webp" alt="" style="width: 100%; height: 100%; filter:grayscale(20%) brightness(60%)">
+                      <div class="absolute text-white" style="top: 30%;">
+                        <p class="text-left px-7 font-extralight tracking-tighter " style="font-size: 6.66vw; line-height: 9.33vw; margin-bottom: 1.38vw;  font-family: 'Noto Serif', serif;">“Turn Key apartment in Rotterdam.”</p>
+                        <p class="px-7 pt-3 tracking-wide font-semibold" style="font-family: 'Noto Serif', serif; margin-bottom: 6.66vw; font-size: 4.26vw; line-height: 6.93vw;"><span>Koninklijke Vopak N.V. —</span>   Rotterdam</p>
+                        <span class="block px-7"><a href="#" class="text-white inline-block border border-white border-opacity-60 px-3 " style="font-size: 5.33vw; line-height: 13.33vw; letter-spacing: 0.5px; font-family: 'Noto Serif', serif"> Read Testimonial </a></span>
+                      </div>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <div class="relative w-full h-full">
+                      <img class="absolute" src="img/slideshow-4.webp" alt="" style="width: 100%; height: 100%; filter:grayscale(20%) brightness(60%)">
+                      <div class="absolute text-white" style="top: 30%;">
+                        <p class="text-left px-7 font-extralight tracking-tighter " style="font-size: 6.66vw; line-height: 9.33vw; margin-bottom: 1.38vw;  font-family: 'Noto Serif', serif;">“Our club room has been renovated into a peaceful oasis with colors that reflect the dunes in which we are located.”</p>
+                        <p class="px-7 pt-3 tracking-wide font-semibold" style="font-family: 'Noto Serif', serif; margin-bottom: 6.66vw; font-size: 4.26vw; line-height: 6.93vw;"><span>Noordwijkse Golfclub, Board of Trustees —</span>   Noordwijk</p>
+                        <span class="block px-7"><a href="#" class="text-white inline-block border border-white border-opacity-60 px-3 " style="font-size: 5.33vw; line-height: 13.33vw; letter-spacing: 0.5px; font-family: 'Noto Serif', serif"> Read Testimonial </a></span>
+                      </div>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="relative w-full h-full">
+                    <img class="absolute" src="img/hpr4-a.webp" alt="" style="width: 100%; height: 100%; filter:grayscale(20%) brightness(60%);">
+                    <div class="absolute text-white" style="top: 30%;">
+                        <p class="text-left px-7 font-extralight tracking-tighter " style="font-size: 6.66vw; line-height: 9.33vw; margin-bottom: 1.38vw;  font-family: 'Noto Serif', serif;">“Stock has been such a great help.”</p>
+                        <p class="px-7 pt-3 tracking-wide font-semibold" style="font-family: 'Noto Serif', serif; margin-bottom: 6.66vw; font-size: 4.26vw; line-height: 6.93vw;"><span>Candy Dulfer —</span>   Amsterdam</p>
+                        <span class="block px-7"><a href="#" class="text-white inline-block border border-white border-opacity-60 px-3 " style="font-size: 5.33vw; line-height: 13.33vw; letter-spacing: 0.5px; font-family: 'Noto Serif', serif"> Read Testimonial </a></span>
+                      </div>
+                </div>
+            </div>
+        
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination" style="color: white;"></div>
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev" style="position: absolute;left: 10%; top:15%; color: white; opacity: 0.7;"></div>
+            <div class="swiper-button-next" style="position: absolute; left: 20%; top:15%; color: white; opacity: 0.7;"></div>
+        
+        
+          </div>
+        <!--other -->
+        <div class="swiper hidden xs:block" style="height: 100vh; position: relative; top: -200vh;">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                  <div class="relative w-full h-full">
+                      <img class="absolute" src="img/slideshow1.webp" alt="" style="width: 100%; height: 100%; object-fit: cover; filter:grayscale(20%) brightness(60%)">
+                      <div class="absolute text-white h-full w-full"  style="top: 30%;">
+                          <p class="text-left mx-20 lg:mx-40 font-extralight tracking-tighter " style="font-size: 4.51vw; line-height: 5.2vw; margin-bottom: 1.38vw;  font-family: 'Noto Serif', serif;">"A positive sparring partner, consultation without trying to box us, and old fashioned service where the customer is king.”</p>
+                          <p class="mx-20 lg:mx-40 pt-3 tracking-wide font-semibold" style=" margin-bottom: 6.66vw; font-size: 1.11vw; line-height: 2.08vw;"><span>Mr. P.C. van Lede &amp; Mrs. M. Bührmann – Smidt van Gelder —</span> Bloemendaal</p>
+                          <span class="block mx-40"><a href="#" class="text-white inline-block border border-white border-opacity-60 px-3 " style="font-size: 1.52vw; line-height: 3.81vw; letter-spacing: 0.5px; font-family: 'Noto Serif', serif"> Read Testimonial </a></span>
+                      </div>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <div class="relative w-full h-full">
+                      <img class="absolute" src="img/slideshow-2.webp" alt="" style="width: 100%; height: 100%; object-fit: cover; filter:grayscale(20%) brightness(60%)">
+                      <div class="absolute text-white" style="top: 30%;">
+                        <p class="text-left mx-20 lg:mx-40 font-extralight tracking-tighter " style="font-size: 4.51vw; line-height: 5.2vw; margin-bottom: 1.38vw;  font-family: 'Noto Serif', serif;">"Without Stock Interiors we would have been lost.”</p>
+                        <p class="mx-20 lg:mx-40 pt-3 tracking-wide font-semibold" style=" margin-bottom: 6.66vw; font-size: 1.11vw; line-height: 2.08vw;"><span>Marry de Gaay Fortman —</span>  Amsterdam</p>
+                        <span class="block mx-40"><a href="#" class="text-white inline-block border border-white border-opacity-60 px-3 " style="font-size: 1.52vw; line-height: 3.81vw; letter-spacing: 0.5px; font-family: 'Noto Serif', serif"> Read Testimonial </a></span>
+                      </div>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <div class="relative w-full h-full">
+                      <img class="absolute" src="img/slideshow-3.webp" alt="" style="width: 100%; height: 100%; object-fit: cover; filter:grayscale(20%) brightness(60%)">
+                      <div class="absolute text-white" style="top: 30%;">
+                        <p class="text-left mx-20 lg:mx-40 font-extralight tracking-tighter " style="font-size: 4.51vw; line-height: 5.2vw; margin-bottom: 1.38vw;  font-family: 'Noto Serif', serif;">“Turn Key apartment in Rotterdam.”</p>
+                        <p class="mx-20 lg:mx-40 pt-3 tracking-wide font-semibold" style=" margin-bottom: 6.66vw; font-size: 1.11vw; line-height: 2.08vw;"><span>Koninklijke Vopak N.V. —</span>   Rotterdam</p>
+                        <span class="block mx-40"><a href="#" class="text-white inline-block border border-white border-opacity-60 px-3 " style="font-size: 1.52vw; line-height: 3.81vw; letter-spacing: 0.5px; font-family: 'Noto Serif', serif"> Read Testimonial </a></span>
+                      </div>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <div class="relative w-full h-full">
+                      <img class="absolute" src="img/slideshow-4.webp" alt="" style="width: 100%; height: 100%; object-fit: cover; filter:grayscale(20%) brightness(60%)">
+                      <div class="absolute text-white" style="top: 30%;">
+                        <p class="text-left mx-20 lg:mx-40 font-extralight tracking-tighter " style="font-size: 4.51vw; line-height: 5.2vw; margin-bottom: 1.38vw;  font-family: 'Noto Serif', serif;">“Our club room has been renovated into a peaceful oasis with colors that reflect the dunes in which we are located.”</p>
+                        <p class="mx-20 lg:mx-40 pt-3 tracking-wide font-semibold" style=" margin-bottom: 6.66vw; font-size: 1.11vw; line-height: 2.08vw;"><span>Noordwijkse Golfclub, Board of Trustees —</span>   Noordwijk</p>
+                        <span class="block mx-40"><a href="#" class="text-white inline-block border border-white border-opacity-60 px-3 " style="font-size: 1.52vw; line-height: 3.81vw; letter-spacing: 0.5px; font-family: 'Noto Serif', serif"> Read Testimonial </a></span>
+                      </div>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="relative w-full h-full">
+                    <img class="absolute" src="img/hpr4-a.webp" alt="" style="width: 100%; height: 100%; object-fit: cover; filter:grayscale(20%) brightness(60%);">
+                    <div class="absolute text-white" style="top: 30%;">
+                        <p class="text-left mx-20 lg:mx-40 font-extralight tracking-tighter " style="font-size: 4.51vw; line-height: 5.2vw; margin-bottom: 1.38vw;  font-family: 'Noto Serif', serif;">“Stock has been such a great help.”</p>
+                        <p class="mx-20 lg:mx-40 pt-3 tracking-wide font-semibold" style=" margin-bottom: 6.66vw; font-size: 1.11vw; line-height: 2.08vw;"><span>Candy Dulfer —</span>   Amsterdam</p>
+                        <span class="block mx-40"><a href="#" class="text-white inline-block border border-white border-opacity-60 px-3 " style="font-size: 1.52vw; line-height: 3.81vw; letter-spacing: 0.5px; font-family: 'Noto Serif', serif"> Read Testimonial </a></span>
+                      </div>
+                </div>
+            </div>
+        
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination" style="color: white; position: absolute; top: 90%;"></div>
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev " style="position: absolute;left: 80%; top:90%; color: white; opacity: 0.7;"></div>
+            <div class="swiper-button-next " style="position: absolute; left: 90%; top:90%; color: white; opacity: 0.7;"></div>
+        
+        
+          </div>
+          <!-- slideshow_2 -->
+          <!-- mobile -->
+          <div class="xs:hidden slideshow-2 w-full overflow-x-hidden  relative" style="background-color: #8593a0; padding: 26.66vw 0;">
+            <div class="ml-10" style="margin-bottom: 13.33vw;">
+                <p class="tracking-tight text-white" style="font-size: 5.33vw; letter-spacing: 0.02vw; font-family: 'Noto Serif', serif;"><span class="opacity-40">003 -</span> Stock in the media</p>
+            </div>
+            <div class="slidewrapper  flex" style="width: 200vw; transition: transform 3s ease;">
+                <img class="imgslide1  mx-auto" style="height: 57.1vw;" src="img/book1.webp"  alt="">
+                <img class="imgslide1   mx-auto" style="height: 57.1vw; " src="img/book2.webp"  alt="">
+              </div>
+            <div class="relative">
+                <div class="text-animation-1  text-white py-10 " style="font-family: 'Noto Serif', serif;">
+                    <p class="ctext-1 tracking-tight" style="text-align: center; font-size: 10.66vw; line-height: 13.33vw;">Books</p>
+                    <span class="ctext-2 block px-7 text-right mt-2 mr-10"><a href="#" class="text-white inline-block border border-white border-opacity-60 px-3 " style="font-size: 5.33vw; line-height: 13.33vw; letter-spacing: 0.5px; font-family: 'Noto Serif', serif"> Veiw books </a></span>
+                </div>
+            </div>
+            <ul class="flex mt-5 text-white font-medium justify-center ">
+                <li style="font-size: 3.2vw; letter-spacing: 0.93vw; margin: 0 4vw;"><a onclick="slidemoveleft()" href="javascript:void(0)">Books</a></li>
+                <li style="font-size: 3.2vw; letter-spacing: 0.93vw; margin: 0 4vw;"><a onclick="slidemoveright()" href="javascript:void(0)">Magazines</a></li>
+                <li style="font-size: 3.2vw; letter-spacing: 0.93vw; margin: 0 4vw;"><a href="javascript:void(0)x">Videos</a></li>
+            </ul>
+        
+          </div>
+          <!-- other -->
+          <div class="xs:block hidden slideshow-2-other w-full overflow-x-hidden overflow-y-hidden transition-colors duration-500 relative" style=" background-color: rgba(222,183,153,255); padding: 10.41vw 0; top: -200vh;">
+            <div class="ml-10" style="margin-bottom: 13.33vw;">
+                <p class="tracking-tight text-white" style="font-size: 1.66vw; letter-spacing: 0.02vw; font-family: 'Noto Serif', serif;"><span class="opacity-40">003 -</span> Stock in the media</p>
+            </div>
+            <div class="slidewrapper-other relative z-20  flex" style="width: 200vw; transition: transform 1.5s ease-out; top: -15vw;">
+                <div class="relative" style="width: 100vw;"><img class="imgslide1 absolute" style="height: 57.1vw; left: 38vw;" src="img/book1.webp"  alt=""></div>
+                <div class="relative" style="width: 100vw;"><img class="imgslide1 absolute" style="height: 57.1vw; left: 55vw; " src="img/book2.webp"  alt=""></div>
+              </div>
+            <div class="relative inline-block z-0  w-3/12 " style="margin-left: 10vw;">
+                <div class="text-animation-1-other animate__slow text-white py-10 " style="font-family: 'Noto Serif', serif;">
+                    <p class="ctext-1-other tracking-tight" style=" font-size: 6.25vw; line-height: 6.25vw;">Books</p>
+                    <p class="my-10 ctext-2-other" style="font-size: 1.04vw; line-height: 2.08vw; letter-spacing: 0.03vw; font-family: 'Source Sans Pro';">Stock Story Telling — Proudly presenting our bookcase, with our own book “Dutch Interiors” and all contributed books. <br><br><br></p>
+                    <span class="block "><a href="#" class="ctext-3-other text-white inline-block border border-white border-opacity-60 px-3 " style="font-size: 1.52vw; line-height: 3.81vw; letter-spacing: 0.5px; font-family: 'Noto Serif', serif"> Veiw books </a></span>
+                </div>
+            </div>
+            <ul class="flex text-white font-medium justify-center relative z-30 " style="margin-top: 10vw;">
+                <li class="books-border border-b-4 border-white border-opacity-0"  style="height: 2.08vw; font-size: 0.97vw; letter-spacing: 0.31vw; margin: 0 1.73vw;"><a onclick="slidemoveleftonother()" href="javascript:void(0)">Books</a></li>
+                <li class="magazines-border border-b-4 border-white border-opacity-0"  style="height: 2.08vw; font-size: 0.97vw; letter-spacing: 0.31vw; margin: 0 1.73vw;"><a onclick="slidemoverightonother()" href="javascript:void(0)">Magazines</a></li>
+                <li class="border-b-4 border-white border-opacity-0"  style="height: 2.08vw; font-size: 0.97vw; letter-spacing: 0.31vw; margin: 0 1.73vw;"><a href="javascript:void(0)x">Videos</a></li>
+            </ul>
+        
+          </div>
+          <!-- standalone section-1 -->
+          <!-- mobile -->
+          <div class="xs:hidden block standalone-1 w-full "  style="padding: 26.66vw 0; background-color: #acb7ae;">
+            <div>
+                <div class="ml-10" style="margin-bottom: 13.33vw;">
+                    <p class="tracking-tight text-white" style="font-size: 5.33vw; letter-spacing: 0.02vw; font-family: 'Noto Serif', serif;"><span class="opacity-40">004 -</span> Journal</p>
+                </div>
+                <div class="img-frame mx-auto  overflow-hidden transition-transform duration-150" style="width: 67vw; height: 100vw;">
+                    <img src="img/standaloneimg1.webp" class="parallax-img relative" alt="" style="transform: scale(1.1); object-fit: cover; object-position: center;">
+                </div>
+                <div class="flex flex-col mx-auto mt-10" style="width: 67vw;">
+                    <p class="font-semibold text-white" style="font-size: 3.2vw; line-height: 3.2vw; letter-spacing: 0.93vw; text-transform: uppercase;">21.10.20</p>
+                    <p class="text-white" style="margin: 6.66vw 0; font-size: 8vw; line-height: 10.66vw; letter-spacing: 0.05vw; font-family: 'Noto Serif', serif; ">Our own Stock Stable</p>
+                    <span class="block "><a href="#" class="text-white inline-block border border-white border-opacity-60 px-3 " style="font-size: 5.33vw; line-height: 13.33vw; letter-spacing: 0.5px; font-family: 'Noto Serif', serif">  Read blogpost  </a></span>
+                </div>
+        
+            </div>
+          </div>
+          <!-- other -->
+          <div class="hidden xs:block standalone-1-other w-full relative "  style="padding: 10.41vw 0; padding-top: 5vw; background-color: #acb7ae; top: -200vh;">
+            <div>
+                <div class="ml-10" style="margin-bottom: 13.33vw;">
+                    <p class="tracking-tight text-white" style="font-size: 1.66vw; letter-spacing: 0.02vw; font-family: 'Noto Serif', serif;"><span class="opacity-40">004 -</span> Journal</p>
+                </div>
+                <div class="grid grid-cols-2">
+                    <div class="img-frame-other  overflow-hidden transition-transform duration-150 justify-self-end" style="width: 33.3vw;">
+                        <img src="img/standaloneimg1.webp" class="parallax-img-other relative" alt="" style="transform: scale(1.1); object-fit: cover; object-position: center;">
+                    </div>
+                    <div class="flex flex-col  mt-10 self-center justify-self-center ">
+                        <p class="font-semibold text-white" style="font-size: 0.97vw; line-height: 0.97vw; letter-spacing: 0.31vw; text-transform: uppercase;">21.10.20</p>
+                        <p class="text-white" style="margin: 3.47vw 0; font-size: 4.51vw; line-height: 5.2vw; letter-spacing: 0.03vw; font-family: 'Noto Serif', serif; ">Our own <br> Stock Stable</p>
+                        <span class="block"><a href="#" class="text-white inline-block border border-white border-opacity-60 px-3 " style="font-size: 1.52vw; line-height: 3.81vw; letter-spacing: 0.5px; font-family: 'Noto Serif', serif"> Read blogpost </a></span>
+                    </div>
+                </div>
+        
+            </div>
+          </div>
+          <!-- standalone2 -->
+          <!-- mobile -->
+          <div class="xs:hidden block standalone-1 w-full "  style="padding: 26.66vw 0; background-color: white; color: #202020;">
+            <div>
+                <div class="ml-10" style="margin-bottom: 13.33vw;">
+                    <p class="tracking-tight" style="font-size: 5.33vw; letter-spacing: 0.02vw; font-family: 'Noto Serif', serif;"><span class="opacity-40">004 -</span> Contact us</p>
+                </div>
+                <div class="mx-auto overflow-hidden" style="width: 84.2vw; height: 59.1vw;">
+                    <img src="img/standaloneimg2.webp" alt="" style="object-fit: cover; object-position: 0 -170px;">
+                </div>
+                <div class="mx-auto" style="width: 84.2vw; height: 59.1vw;">
+                    <p class="opacity-90" style="margin: 6vw 0; font-size: 7vw; line-height: 10.66vw; letter-spacing: 0.05vw; font-family: 'Noto Serif', serif;">Excited to work with us?</p>
+                    <p class="opacity-60" style="margin: 6.66vw 0; font-size: 4vw; line-height: 6.93vw; letter-spacing: 0.03;">Got a project on your mind? Collaboration? Let us know, and we’ll soon get back to you.</p>
+                    <span class="block "><a href="#" class="text-black inline-block border border-black border-opacity-60 px-3 " style="font-size: 5.33vw; line-height: 13.33vw; letter-spacing: 0.5px; font-family: 'Noto Serif', serif">   Get in touch   </a></span>
+                </div>
+            </div>
+          </div>
+            <!-- other -->
+            <div class="hidden xs:block standalone-1 w-full relative "  style="padding: 10.41vw 0; padding-top: 5vw; background-color: white; color: #202020; top: -200vh;">
+                <div>
+                    <div class="ml-10" style="margin-bottom: 13.33vw;">
+                        <p class="tracking-tight " style="font-size: 1.66vw; letter-spacing: 0.02vw; font-family: 'Noto Serif', serif;"><span class="opacity-40">004 -</span> Journal</p>
+                    </div>
+                    <div class="grid grid-cols-2">
+                        <div class="mx-auto justify-self-end">
+                            <p class="opacity-90" style="margin: 2vw 0; font-size: 4.51vw; line-height: 5.2vw; letter-spacing: 0.03vw; font-family: 'Noto Serif', serif;">Excited to <br> work with us?</p>
+                            <p class="opacity-60" style="margin: 2.08vw 0; font-size: 1.04vw; line-height: 2.08vw; letter-spacing: 0.03;">Got a project on your mind? Collaboration? Let us <br> know, and we’ll soon get back to you.</p>
+                            <span class="block"><a href="#" class=" inline-block border border-black border-opacity-60 px-3 " style="font-size: 1.52vw; line-height: 3.81vw; letter-spacing: 0.5px; font-family: 'Noto Serif', serif"> Get in touch </a></span>
+                        </div>
+                        <div class="mx-auto overflow-hidden" style="width: 33.4vw; height: 33.4vw;">
+                            <img src="img/standaloneimg2.webp" alt="" style="object-fit: cover;">
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <!-- line -->
+              <div class="w-full relative bg-white" style="top: -15vw;"><hr></div>
+              <!--footer -->
+              <!-- mobile -->
+              <div class="block xs:hidden footer w-full  text-black bg-white relative pt-5" style="margin: 26.66vw 0 13.33vw; top: -40vw;">
+                <div class="grid grid-cols-2 justify-center mx-10 gap-y-20 gap-x-2">
+                    <div>
+                        <p style="margin-bottom: 5.33vw; font-size: 5.33vw; line-height: 5.33vw; letter-spacing: 0.26vw; font-family: 'Noto Serif', serif;">Stock Dutch Design</p>
+                        <ul class="flex flex-col" style="font-size: 3.73vw;">
+                            <li class="my-1"><a href="#" class="opacity-60 hover:opacity-100">About</a></li>
+                            <li class="my-1"><a href="#" class="opacity-60 hover:opacity-100">Projects</a></li>
+                            <li class="my-1"><a href="#" class="opacity-60 hover:opacity-100">Journal</a></li>
+                            <li class="my-1"><a href="#" class="opacity-60 hover:opacity-100">Lookbook</a></li>
+                            <li class="my-1"><a href="#" class="opacity-60 hover:opacity-100">Media</a></li>
+                            <li class="my-1"><a href="#" class="opacity-60 hover:opacity-100">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p style="margin-bottom: 5.33vw; font-size: 5.33vw; line-height: 5.33vw; letter-spacing: 0.26vw; font-family: 'Noto Serif', serif;">Our Work</p>
+                        <ul class="flex flex-col" style="font-size: 3.73vw;">
+                            <li class="my-1"><a href="" class="opacity-60 hover:opacity-100">Embracing & Toasting</a></li>
+                                <li class="my-1"><a href="" class="opacity-60 hover:opacity-100">Cooking & Sharing</a></li>
+                                <li class="my-1"><a href="" class="opacity-60 hover:opacity-100">Splattering & Dreaming</a></li>
+                                <li class="my-1"><a href="" class="opacity-60 hover:opacity-100">Creating & Playing Style</a></li>
+                                <li class="my-1"><a href="" class="opacity-60 hover:opacity-100">Stock Originals</a></li>
+                                <li class="my-1"><i class="bi bi-dash-lg"></i></li>
+                                <li class="my-1"><a href="" class="opacity-60 hover:opacity-100">All Projects</a></li>
+                                <li class="my-1"><a href="" class="opacity-60 hover:opacity-100">Testimonials</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p style="margin-bottom: 5.33vw; font-size: 5.33vw; line-height: 5.33vw; letter-spacing: 0.26vw; font-family: 'Noto Serif', serif;">In the Media</p>
+                        <ul class="flex flex-col" style="font-size: 3.73vw; ">
+                            <li class="my-1"><a href="" class="opacity-60 hover:opacity-100">Books</a></li>
+                            <li class="my-1"><a href="" class="opacity-60 hover:opacity-100">Magazines</a></li>
+                            <li class="my-1"><a href="" class="opacity-60 hover:opacity-100">Videos</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p style="margin-bottom: 5.33vw; font-size: 5.33vw; line-height: 5.33vw; letter-spacing: 0.26vw; font-family: 'Noto Serif', serif;">Social</p>
+                        <ul class="flex flex-col" style="font-size: 3.73vw; ">
+                            <li class="my-1"><a href="" class="opacity-60 hover:opacity-100">Instagram</a></li>
+                                <li class="my-1"><a href="" class="opacity-60 hover:opacity-100">Pintrest</a></li>
+                                <li class="my-1"><a href="" class="opacity-60 hover:opacity-100">Facebook</a></li>
+                                <li class="my-1"><a href="" class="opacity-60 hover:opacity-100">LinkedIn</a></li>
+                                <li class="my-1"><a href="" class="opacity-60 hover:opacity-100">Houzz</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p style="margin-bottom: 5.33vw; font-size: 5.33vw; line-height: 5.33vw; letter-spacing: 0.26vw; font-family: 'Noto Serif', serif;">Address</p>
+                        <ul class="flex flex-col" style="font-size: 3.73vw; opacity: 0.6;">
+                            <li class="my-1">Bloemendaalseweg 200</li>
+                            <li class="my-1">2051 GL Overveen</li>
+                            <li class="my-1">+31 23 303 03 43</li>
+                            <li class="my-1">info@stockdutchdesign.com</li>
+                        </ul>
+                    </div>
+                </div>
+              </div>
+                <!-- other -->
+                <div class="xs:block hidden footer w-full  text-black bg-white relative pt-5" style="padding: 10.41vw 0; padding-top: 5vw; top: -201vh;">
+                    <div class="grid grid-cols-5 justify-center mx-auto " style="max-width: 80%;">
+                        <div>
+                            <p style="margin-bottom: 2.08vw; font-size: 1.52vw; line-height: 1.52vw; letter-spacing: 0.03vw; font-family: 'Noto Serif', serif;">Stock Dutch Design</p>
+                            <ul class="flex flex-col" style="font-size: 1.04vw;">
+                                <li class="my-1"><a href="#" class="opacity-60 hover:opacity-100">About</a></li>
+                                <li class="my-1"><a href="#" class="opacity-60 hover:opacity-100">Projects</a></li>
+                                <li class="my-1"><a href="#" class="opacity-60 hover:opacity-100">Journal</a></li>
+                                <li class="my-1"><a href="#" class="opacity-60 hover:opacity-100">Lookbook</a></li>
+                                <li class="my-1"><a href="#" class="opacity-60 hover:opacity-100">Media</a></li>
+                                <li class="my-1"><a href="#" class="opacity-60 hover:opacity-100">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p style="margin-bottom: 2.08vw; font-size: 1.52vw; line-height: 1.52vw; letter-spacing: 0.03vw; font-family: 'Noto Serif', serif;">Our Work</p>
+                            <ul class="flex flex-col" style="font-size: 1.04vw;">
+                                <li class="my-1"><a href="" class="opacity-60 hover:opacity-100">Embracing & Toasting</a></li>
+                                <li class="my-1"><a href="" class="opacity-60 hover:opacity-100">Cooking & Sharing</a></li>
+                                <li class="my-1"><a href="" class="opacity-60 hover:opacity-100">Splattering & Dreaming</a></li>
+                                <li class="my-1"><a href="" class="opacity-60 hover:opacity-100">Creating & Playing Style</a></li>
+                                <li class="my-1"><a href="" class="opacity-60 hover:opacity-100">Stock Originals</a></li>
+                                <li class="my-1"><i class="bi bi-dash-lg"></i></li>
+                                <li class="my-1"><a href="" class="opacity-60 hover:opacity-100">All Projects</a></li>
+                                <li class="my-1"><a href="" class="opacity-60 hover:opacity-100">Testimonials</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p style="margin-bottom: 2.08vw; font-size: 1.52vw; line-height: 1.52vw; letter-spacing: 0.03vw; font-family: 'Noto Serif', serif;">In the Media</p>
+                            <ul class="flex flex-col" style="font-size: 1.04vw;">
+                                <li class="my-1"><a href="" class="opacity-60 hover:opacity-100">Books</a></li>
+                                <li class="my-1"><a href="" class="opacity-60 hover:opacity-100">Magazines</a></li>
+                                <li class="my-1"><a href="" class="opacity-60 hover:opacity-100">Videos</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p style="margin-bottom: 2.08vw; font-size: 1.52vw; line-height: 1.52vw; letter-spacing: 0.03vw; font-family: 'Noto Serif', serif;">Social</p>
+                            <ul class="flex flex-col" style="font-size: 1.04vw;">
+                                <li class="my-1"><a href="" class="opacity-60 hover:opacity-100">Instagram</a></li>
+                                <li class="my-1"><a href="" class="opacity-60 hover:opacity-100">Pintrest</a></li>
+                                <li class="my-1"><a href="" class="opacity-60 hover:opacity-100">Facebook</a></li>
+                                <li class="my-1"><a href="" class="opacity-60 hover:opacity-100">LinkedIn</a></li>
+                                <li class="my-1"><a href="" class="opacity-60 hover:opacity-100">Houzz</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p style="margin-bottom: 2.08vw; font-size: 1.52vw; line-height: 1.52vw; letter-spacing: 0.03vw; font-family: 'Noto Serif', serif;">Address</p>
+                            <ul class="flex flex-col" style="font-size: 1.04vw; opacity: 0.6;">
+                                <li class="my-1">Bloemendaalseweg 200</li>
+                                <li class="my-1">2051 GL Overveen</li>
+                                <li class="my-1">+31 23 303 03 43</li>
+                                <li class="my-1">info@stockdutchdesign.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                  </div>
+        
+    </div>
+
+   
+
+ 
+
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>

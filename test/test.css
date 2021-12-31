@@ -1,0 +1,21 @@
+.parent{
+  position: relative;
+  width:100%;
+  height: 1200px;
+}
+
+.child{
+  position: absolute;
+  height: 400px;
+  width: 200px;
+  overflow: hidden;
+  top: 20%;
+  left: 40%;
+}
+
+.child img{
+  width: 60vw;
+  transform: translateY(0);
+  transition: transform ease;
+  
+}
